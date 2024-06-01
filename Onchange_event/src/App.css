@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 50vw;
+    height: 200px;
+    border: none;
+    background-color: black;
+    padding-bottom: 30px;
+}
+
+.main input{
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.main p{
+    font-family: sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+#para_content{
+    letter-spacing: 1px;
+    color: silver;
+}
