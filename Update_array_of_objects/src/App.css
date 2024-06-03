@@ -21,6 +21,7 @@ body{
 }
 
 .main_top li{
+  margin-top: 10px;
   font-size: 20px;
   letter-spacing: 1.4px;
   font-family: sans-serif;
@@ -47,7 +48,7 @@ body{
 .main_bottom button{
   margin-top: 30px;
   font-size: 20px;
-  background-color: black;
+  background-color: #003049;
   outline: none;
   padding: 10px;
   margin-bottom: 10px;
@@ -56,4 +57,10 @@ body{
 
 ::placeholder{
   color: grey;
+}
+
+@media(width<500px){
+  .main{
+    width: 90vw;
+  }
 }
