@@ -6,8 +6,12 @@ function App() {
 
   function handleFruitName(){
     let foodInput = document.getElementById("foodInput").value;
-    setValue(v => [...value, foodInput])
-    document.getElementById("foodInput").value = "";
+    if (foodInput === "") { // check if the input value is empty
+      alert("Please type something");
+    } else{
+        setValue(v => [...value, foodInput])
+        document.getElementById("foodInput").value = "";
+    }
   }
 
   return (
