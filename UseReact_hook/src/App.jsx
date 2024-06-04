@@ -7,6 +7,9 @@ function App() {
 
   function handleRefChange(){
     displayRef.current.textContent  = ref.current.value;
+    if(displayRef.current.textContent == ""){
+      displayRef.current.textContent = "Display Here";
+    }
     ref.current.focus();
   }
 
