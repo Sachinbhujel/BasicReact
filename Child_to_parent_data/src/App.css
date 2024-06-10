@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  background-color: darkcyan;  
+  padding: 12px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  border-radius: 6px;
+}
+
+.main h2{
+  color: white;
+  font-family: sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.main button{
+  font-size: 18px;
+  font-family: sans-serif;
+  width: 130px;
+  background-color: white;
+  padding: 8px;
+  border-radius: 25px;
+}
+
+@media(width<500px){
+  .main{
+    width: 86vw;
+  }
+}
