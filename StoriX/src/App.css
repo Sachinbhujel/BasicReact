@@ -115,6 +115,77 @@ header h1 {
     height: 40px;
 }
 
+.search-container {
+    width: 100%;
+    margin: 40px auto;
+    padding: 16px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .suggestions-list {
+    margin-top: 25px;
+  }
+  
+  .suggestion-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .suggestion-item span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+
+  .suggest-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .suggest-profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .follow-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background 0.3s ease;
+  }
+  
+  .follow-btn:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  .following {
+    background-color: #ddd;
+    color: black;
+    cursor: default;
+  }
+  
+
 @media (max-width: 600px) {
     header {
         padding: 10px 15px;
@@ -144,4 +215,20 @@ header h1 {
         font-size: 36px; 
         bottom: 27px;
     }
+    .search-container {
+        width: 100%;
+        margin: 20px auto;
+        padding: 12px;
+      }
+
+      .suggestion-item span{
+        font-size: 17px;
+      }
+    
+      .follow-btn {
+        margin-top: 5px;
+        width: 100%;
+        text-align: center;
+        display: none;
+      }
 }

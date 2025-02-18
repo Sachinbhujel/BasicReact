@@ -4,7 +4,7 @@ import './App.css'
 function StoryBar(){
     return(
         <>
-            <h1>Hiii</h1>
+            <h3>Hiii</h3>
         </>
     )
 }
