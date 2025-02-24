@@ -10,7 +10,6 @@ function App()
     <>
       <div className='header'>
         <Header />
-        <StoryBar />
         <Bottom />
       </div>
     </>
