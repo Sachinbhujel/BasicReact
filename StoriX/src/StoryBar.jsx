@@ -17,7 +17,7 @@ function StoryBar() {
       <>
         <div className="following-div">
           <h2 className="following-heading">Following</h2>
-          <p>View all</p>
+          <p>View All</p>
         </div>
         <div className="stories-container">
           {storiesData.map((story) => (
