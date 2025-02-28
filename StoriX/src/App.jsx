@@ -1,17 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './App.css'
 import Header from './Header'
 import Bottom from './Bottom'
-import StoryBar from './StoryBar'
+import Notifications from './Notifications'
 
 function App()
 {
+  const [showNotifications, setShowNotifications] = useState(false);
+
   return (
     <>
-      <div className='header'>
-        <Header />
-        <Bottom />
-      </div>
+      {showNotifications ? (
+        <Notifications onClose={() => setShowNotifications(false)} />
+      ) : (
+        <div className="header">
+          <Header onClick={() => setShowNotifications(true)} />
+          <Bottom />
+        </div>
+      )}
     </>
   )
 }

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import Search from './Search';
 import StoryBar from './StoryBar';
+import Trending from './Trending';
+import Profile from './Profile';
 
 function Bottom() {
     const [active, setActive] = useState("home");
@@ -17,6 +19,8 @@ function Bottom() {
             {/* Show StoryBar by default, but prevent re-render on Home click */}
             {active === "home" && <StoryBar />}
             {active === "search" && <Search />}
+            {active === "trending" && <Trending />}
+            {active === "profile" && <Profile />}
 
             {/* Bottom Navigation */}
             <div className='bottom_bar'>
