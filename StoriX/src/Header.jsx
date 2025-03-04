@@ -1,17 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './App.css'
 
-function Header({onClick})
+function Header({onClick, notificationCount})
 {
+
   return (
     <>
         <header>
             <h1>StoriX</h1>
             <div className='notify_icon' onClick={onClick}>
-              <span class="material-symbols-outlined">
-                notifications
-              </span>
-              <p>4</p>
+              <span className="material-symbols-outlined">notifications</span>
+              {notificationCount > 0 && <p>{notificationCount}</p>}
             </div>
         </header>
     </>
